@@ -1,20 +1,16 @@
-# w5d2: [Rails Lite!][description]
+# [Rails Lite!][git link]
 
-## Using The Specs
+Core functionality implementation of the Rails framework. Utilizes WEBrick server
+to recreate Rails core functionality. Metaprogramming implemented with abandon.
 
-Some specs have been written to guide you towards the lite. There are
-rspec specs in the `spec` directory and demo servers for you to try
-in the `bin` directory.
+## Features
+  * ruby
+  * metaprogramming
+  * Regex-based pattern matching
 
-## Suggested Order
+## Technologies
+  * Rspec
+  * WEBrick
+  * ERB
 
-0.  `bundle exec rspec spec/p02_controller_spec.rb`
-0.  `bundle exec rspec spec/p03_template_spec.rb`
-0.  `bundle exec rspec spec/p04_session_spec.rb`
-0.  `bundle exec rspec spec/p05_params_spec.rb`
-0.  `bundle exec rspec spec/p06_router_spec.rb`
-0.  `bundle exec rspec spec/p07_integration_spec.rb`
-
-Run `bundle exec rspec` to run all the spec files.
-
-[description]: https://github.com/appacademy/rails-curriculum/blob/master/projects/w5d2-rails-lite-i.md
+[git link]: https://github.com/roykillany/RailsLite
