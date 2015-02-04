@@ -1,9 +1,9 @@
 require 'webrick'
-require 'phase3/controller_base'
+require 'template/controller_base'
 
-describe Phase3::ControllerBase do
+describe Template::ControllerBase do
   before(:all) do
-    class CatsController < Phase3::ControllerBase
+    class CatsController < Template::ControllerBase
       def index
         @cats = ["GIZMO"]
       end

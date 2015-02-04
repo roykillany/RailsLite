@@ -1,7 +1,7 @@
 require 'json'
 require 'webrick'
 
-module Phase4
+module Session
   class Session
 
     def initialize(req)

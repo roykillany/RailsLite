@@ -1,14 +1,16 @@
 require 'webrick'
-require_relative '../lib/phase3/controller_base'
+require_relative '../lib/session/controller_base'
 
 # http://www.ruby-doc.org/stdlib-2.0/libdoc/webrick/rdoc/WEBrick.html
 # http://www.ruby-doc.org/stdlib-2.0/libdoc/webrick/rdoc/WEBrick/HTTPRequest.html
 # http://www.ruby-doc.org/stdlib-2.0/libdoc/webrick/rdoc/WEBrick/HTTPResponse.html
 # http://www.ruby-doc.org/stdlib-2.0/libdoc/webrick/rdoc/WEBrick/Cookie.html
 
-class MyController < Phase3::ControllerBase
+class MyController < Session::ControllerBase
   def go
-    render :show
+    session["count"] ||= 0
+    session["count"] += 1
+    render :counting_show
   end
 end
 

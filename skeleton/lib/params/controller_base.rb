@@ -1,8 +1,8 @@
-require_relative '../phase4/controller_base'
+require_relative '../session/controller_base'
 require_relative './params'
 
-module Phase5
-  class ControllerBase < Phase4::ControllerBase
+module Params
+  class ControllerBase < Session::ControllerBase
     attr_reader :params
 
     def initialize(req, res, route_params = {})

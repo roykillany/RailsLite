@@ -1,4 +1,4 @@
-module Phase2
+module Foundation
   class ControllerBase
     attr_reader :req, :res
 

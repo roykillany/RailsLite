@@ -1,6 +1,6 @@
 require 'uri'
 
-module Phase5
+module Params
   class Params
     def initialize(req, route_params = {})
       @params = {}

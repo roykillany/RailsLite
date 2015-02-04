@@ -1,8 +1,8 @@
-require_relative '../phase5/controller_base'
+require_relative '../params/controller_base'
 
-module Phase6
-  class ControllerBase < Phase5::ControllerBase
-    
+module Routing
+  class ControllerBase < Params::ControllerBase
+
     def invoke_action(name)
       self.send(name)
       render(name) unless already_built_response?
